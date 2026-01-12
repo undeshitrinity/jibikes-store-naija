@@ -367,7 +367,7 @@
 
   <script>
     // Load cart from localStorage
-    let cart = JSON.parse(localStorage.getItem('brainyCart')) || [];
+    let cart = JSON.parse(localStorage.getItem('kibike Cart')) || [];
 
     // Products data
     const products = [
@@ -517,7 +517,7 @@
     }
 
     function saveCart() {
-      localStorage.setItem('brainyCart', JSON.stringify(cart));
+      localStorage.setItem('jibikeCart', JSON.stringify(cart));
     }
 
     function showPopup(text) {
@@ -539,7 +539,7 @@
     return acc;
   }, {});
 
-  let message = "*New Order - Brainy's Collection*%0A%0A";
+  let message = "*New Order - Jibike Store Naija*%0A%0A";
 
   Object.values(grouped).forEach(item => {
     message += `• ${item.name}%0A   ${item.qty} × ₦${item.price.toLocaleString()}%0A%0A`;
